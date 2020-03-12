@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agrond</title>
+    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
+</head>
+<body>
+
+
+<div class="title-bar">
+    <p>Location</p>
+</div>
+
+<div class="box" id="banner-box">
+    <IMG src="./media/images/banner2.jpg" alt="Banner" id="banner">
+</div>
+
+<div class="box" id="menu">
+    <button class="menu-button" id="button1">Home</button>
+    <button class="menu-button" id="button2">Info</button>
+    <button class="menu-button" id="button3">Projects</button>
+    <button class="menu-button" id="button4">Location</button>
+    <button class="menu-button" id="button5">Contact</button>
+    <div class="dropdown" id="dropdown-button">
+        <button onclick="myFunction()" class="menu-button">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</div>
+
+<div class="bar">
+    <p>Saxion Enschede</p>
+</div>
+
+<div class="box" id="article-box">
+    <div id="map"></div>
+    <p>This is where I do most of my work.</p>
+</div>
+
+<div class="bar">
+    Isn't Google great?
+</div>
+
+<div class="bottom-box">
+    <p>Did you know orcs were influenced by goblins?</p>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9f3yQMFWS7ksnxSf8oOVbT03a60ffyME&callback=initMap"
+        async defer></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
